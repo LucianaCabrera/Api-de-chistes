@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url('img/chukc.gif');
+    /* display: flex; */
+    /* justify-content: center; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-weight: bold;
+    border: 2px solid #c9bdbd;
+    padding: 1px;
+    margin: 100px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    border-radius: 10px;
+    /* max-width: 400px;
+    width: 90%; */
+}
+
+.formulario label {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario select {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+/* .formulario select:hover{
+    background-color: rgb(0, 0, 0);
+    color:#ffffff;
+    cursor: pointer;
+} */
+#formulario-categorias {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px; /* Agregar relleno para hacerlo más espacioso */
+    width: 80%; /* Cambiar el ancho a un porcentaje más grande para que se vea más grande */
+    max-width: 300px; /* Establecer un ancho máximo para evitar que se expanda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centrar horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregar sombra para resaltar el formulario */
+}
+
+.formulario .enviar {
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px auto; /* Centrar el botón horizontalmente y ajustar el espacio vertical */
+    line-height: 2em;
+    min-width: 150px;
+    outline: none;
+    display: block; /* Asegurar que el botón se muestre como un bloque */
+}
+/* .formulario button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+} */
+
+.respuesta {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 100px;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.chiste {
+    font-weight: bold;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    color: #fff;
+}   
+.contacto {
+    margin-top: 50%; /* Ajusta este valor según lo necesites */
+    /* background-color: #000; */
+}
+.envelope-wrapper {
+    height: 380px;
+}
+
+#envelope {
+    position: relative;
+    height: 180px;
+    width: 280px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#envelope:hover {
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 3;
+}
+
+.flap {
+    border-top: 98px solid #0720ff;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 82px solid transparent;
+    transform-origin: top;
+}
+
+.pocket {
+    border-left: 140px solid #00ddff;
+    border-right: 140px solid #09f;
+    border-bottom: 90px solid #190fa5;
+    border-top: 90px solid transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.letter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 240, 240);
+    width: 90%;
+    height: 95%;
+    top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 2px 26px rgba(0, 0, 0, .12);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.letter:after {
+    /* content: ""; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.words {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 14%;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+
+.line1 {
+    top: 15%;
+  
+}
+.line2 {
+    top: 30%;
+}
+.line3 {
+    top: 50%;
+    text-align: center;
+}
+.line4 {
+    top: 65%;
+    text-align: center;
+}
+
+.open .flap {
+    transform: rotatex(180deg);
+    transition: transform 0.4s ease, z-index 0.6s;
+    z-index: 1;
+}
+
+.close .flap {
+    transform: rotatex(0deg);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 5;
+}
+
+.open .letter {
+    transform: translatey(-80px);
+    transition: transform 0.4s 0.6s ease, z-index 0.6s;
+    z-index: 2;
+}
+
+.close .letter {
+    transform: translatey(0deg);
+    transition: transform 0.4s ease, z-index 1s;
+    z-index: 1;
+}
+
+/* .hearts {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    background: #d00000;
+    width: 50px;
+    height: 80px;
+    left: 50px;
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.close .heart {
+    opacity: 0;
+    animation: none;
+} */
+
+.a1 {
+    left: 20%;
+    transform: scale(0.6);
+    opacity: 1;
+    animation: slideUp 4s linear 1, sideSway 2s  ease-in-out 4 alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.a2 {
+    left: 55%;
+    transform: scale(1);
+    opacity: 1;
+    animation: slideUp 5s linear 1, sideSway 4s  ease-in-out 2 alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.a3 {
+    left: 10%;
+    transform: scale(0.8);
+    opacity: 1;
+    animation: slideUp 7s linear 1, sideSway 2s  ease-in-out 6 alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes slideUp {
+    0% {
+       top: 0;
+    }
+    100% {
+        top: -600px;
+    }
+}
+
+@keyframes sideSway {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+.reset {
+    text-align: center;
+}
+.enviar{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.reset button, .enviar button{
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #070707;
+    border-radius: 4px;
+    color: #000000;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+}
+
+.reset button:hover{
+    background-color: #000000;
+    cursor: pointer;
+    color: #ffffff;
+}
+button {
+    /* border-color: #fff; */
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0; 
+    cursor: pointer;
+    transition: .3s;
+}
+
+button a {
+    background-color: #000;
+    padding: 16px 24px;
+    border-radius: 6px;
+    display: inline-block; 
+    transition: .3s;
+    color: #fff;
+}
+
+button:hover a {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}

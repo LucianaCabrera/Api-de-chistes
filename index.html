@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chuck Norris Joke</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<link rel="Website icon" type="png" href="img2.png">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+</style>
+<body>
+	<div class="titulo">
+		<h1>CHUCK NORRIS JOKES</h1>
+	</div>
+	<div class="formulario">
+		<form method="post" id="formulario-categorias">
+			<label for="nueva-categoria">Select a category:</label>				
+				<select name="option" id="option">
+					<option disabled selected value="">SELECT</option>
+					<option value="animal">animal</option>
+					<option value="career">career</option>
+					<option value="celebrity">celebrity</option>
+					<option value="dev">dev</option>
+					<option value="explicit">explicit</option>
+					<option value="fashion">fashion</option>
+					<option value="food">food</option>
+					<option value="history">history</option>
+					<option value="money">money</option>
+					<option value="movie">movie</option>
+					<option value="music">music</option>
+					<option value="political">political</option>
+					<option value="religion">religional</option>
+					<option value="science">science</option>
+					<option value="sport">sport</option>
+					<option value="travel">travel</option>
+				</select>
+			<button type="submit" id="enviar" class="enviar">Send</button>
+		</form>
+	</div>
+	<button>
+		<a href="#contact">Click HERE!</a>
+	</button>
+	<div id="divi"></div>
+
+	<section id="contact" class="contacto">
+		
+		<div class="envelope-wrapper">
+				<div id="envelope" class="close">
+					<div class="front flap"></div>
+					<div class="front pocket"></div>
+					<div class="letter">
+						<p class="words line1">Hi,</p>
+							<p class="words line2">
+								<a href="https://www.linkedin.com/in/luciana-cabrera-olmedo/">Contact</a>
+							</p>
+						<p class="words line3">Love,</p>
+						<p class="words line4">Luciana</p>
+					</div>
+					<!-- <div class="hearts">
+						<div class="heart a1"></div>
+						<div class="heart a2"></div>
+						<div class="heart a3"></div>
+					</div> -->
+				</div>
+				
+			</div>
+			<div class="reset">
+				<button id="open">Open</button>
+				<button id="reset">Close</button>
+			</div>
+	</section>
+		
+	
+	
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script src= "script.js"></script>
+	<script>
+		$(document).ready(function() {
+    var envelope = $("#envelope");
+    var btn_open = $("#open");
+    var btn_reset = $("#reset");
+
+    envelope.click(function() {
+        open();
+    });
+    btn_open.click(function() {
+        open();
+    });
+    btn_reset.click(function() {
+        close();
+    });
+
+    function open() {
+        envelope.addClass("open")
+            .removeClass("close");
+    }
+
+    function close() {
+        envelope.addClass("close")
+            .removeClass("open");
+    }
+
+})
+	</script>
+	
+	
+</body>
+</html>
