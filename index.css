@@ -20,15 +20,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2%;
-    font-size: 20px;
+    font-size: 2em;
     color: rgb(255, 255, 255);
     background-color: #000;
     font-weight: bold;
     border: 2px solid #c9bdbd;
     padding: 1px;
-    margin: 100px;
+    margin: 20px 5%;
 }
-
 .formulario {
     display: flex;
     align-items: center;
@@ -98,6 +97,26 @@ body {
     color: #000000;
     cursor: pointer;
 } */
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+    .titulo h1 {
+        font-size: 3em;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 767px) {
+    .titulo h1 {
+        font-size: 2em;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+    .titulo h1 {
+        font-size: 1.5em;
+    }
+}
 
 .respuesta {
     color: #fff;
@@ -113,7 +132,7 @@ body {
 }
 .chiste {
     font-weight: bold;
-    background-color: #000;
+    background-image: linear-gradient(150deg, #122d52, rgb(38, 132, 194), #012350);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -366,9 +385,10 @@ body {
 button {
     /* border-color: #fff; */
     border: 0;
-    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+    background-image: linear-gradient(150deg, #122d52, rgb(38, 132, 194), #012350);
     border-radius: 8px;
     color: #fff;
+    font-weight: bold;
     display: inline-block;
     font-size: 18px;
     padding: 0; 
@@ -387,8 +407,18 @@ button a {
 
 button:hover a {
     background: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 button:active {
     transform: scale(0.9);
+}
+
+
+.arrow-container svg {
+    width: 30px; 
+    height: 40px; 
+    fill: #ffffff;
+    transition: fill 0.3s ease; 
 }
